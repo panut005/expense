@@ -29,8 +29,9 @@ public class Table {
     @Override
     public String toString() {
         String tmp = "";
-        tmp += detail + " : ";
-        tmp += sign + money + ": ";
+        tmp += detail + ":";
+        tmp += sign + ":";
+        tmp += money+":";
         tmp += balance;
         return tmp;
     }

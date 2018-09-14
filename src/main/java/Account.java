@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Account {
     private ArrayList<Table> table = new ArrayList<Table>();
-    private double balance=0;
+    private double balance;
     public  void addData(String detail,String sign,double money){
 
         if(sign.equals("+")){
@@ -29,4 +29,11 @@ public class Account {
     public double getBalance() {
         return balance;
     }
+    public void addHistory(String detail,String sign,double money,double balance){
+        table.add(new Table(detail,sign,money,balance));
+
+    }
+
+
+
 }
